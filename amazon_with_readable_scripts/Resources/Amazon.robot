@@ -7,12 +7,12 @@ Resource  ../PageObjects/cart_page.robot
 Resource  ../PageObjects/Sign_in_page.robot
 
 *** Keywords ***
-Search for ${search_item} product
-    TopNav.Searching for ${search_item} in search bar
+Search for product
+    TopNav.Searching for product in search bar
     TopNav.Submit button in search bar
-    Search_results_page.Verify search containing result for ${search_item}
+    Search_results_page.Verify search containing result for search item
 
-Add search product ${search_item} to cart
+Add search product to cart
     Search_results_page.Click on the first search product
     Select Window  NEW
     Product_page.Verify product page is present

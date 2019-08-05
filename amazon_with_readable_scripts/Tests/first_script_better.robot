@@ -5,18 +5,16 @@ Resource  ../Resources/Common.robot
 Test Setup  Begin web test
 Test Teardown  Close Test
 
+
 *** Variables ***
+
 ${search_item}  one plus cases
 
 *** Test Cases ***
 User must signin to checck out
     [Documentation]  First readable test to verify user must signin
-    [Tags]  Smoke
-    Search for ${search_item} product
-    Add search product ${search_item} to cart
+    [Tags]  current
+    Search for product
+    Add search product to cart
     Begin to checkout and verify user should signin
-
-
-
-
 

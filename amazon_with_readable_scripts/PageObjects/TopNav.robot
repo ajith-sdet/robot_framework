@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Keywords ***
-Searching for ${search_item} in search bar
+Searching for product in search bar
     INPUT TEXT  id=twotabsearchtextbox  ${search_item}
 
 Submit button in search bar

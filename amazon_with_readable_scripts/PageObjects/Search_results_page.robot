@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Keywords ***
-Verify search containing result for ${search_item}
+Verify search containing result for search item
     wait until page contains  results for "${search_item}"
 
 Click on the first search product
